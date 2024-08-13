@@ -13,6 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js" defer></script>
 
 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>

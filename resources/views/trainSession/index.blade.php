@@ -14,11 +14,13 @@
                     <a href="{{route('trainSession.create')}}" class="inline-flex items-center mt-2 w-full justify-center px-4 py-2 bg-blue-950 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-800 focus:bg-blue-800 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150" >+</a>
                   </div>
 
-                  <ul>
+                  <div class="flex flex-col gap-2" >
                     @foreach ($trainSessions as $trainSession)
-                      <li>{{$trainSession->name}}</li>
+                      <div class="bg-gray-200 border-2 border-gray-300 rounded-lg p-2">
+                        <p class="font-bold text-lg">{{$trainSession->name}} <span class="font-normal text-sm ml-2">{{$trainSession->trainedDay}}</span></p>
+                      </div>
                     @endforeach
-                  </ul>
+                  </div>
                 </div>
             </div>
         </div>

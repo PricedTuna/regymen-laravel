@@ -20,7 +20,7 @@ class Exercise extends Model
     }
 
     public function TrainExercise(){
-        return $this->hasOne(Exercise::class);
+        return $this->hasMany(Exercise::class);
     }
 
     public function user(){
